@@ -136,7 +136,7 @@ Deploy project ke Pacil Web Service:
 
 ## 2. Bagan Request Client ke Web Aplikasi Django
 
-![Bagan Request Django](https://cdn.hashnode.com/res/hashnode/image/upload/v1619466042369/b3LAaF7TO.webp)
+![Bagan Request Django](https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1619466042369%2Fb3LAaF7TO.png)
 
 **Penjelasan Alur:**
 1. Client membuka request URL.
