@@ -172,7 +172,7 @@ Database didefinisikan di `models.py` setiap app. Migrasi adalah proses memberit
 
 ## 5. Mengapa Django Cocok untuk Pemula?
 
-Django adalah framework yang lengkap, menyediakan fitur Separation-of-Concerns, backend, dan SSR dengan integrasi Python yang mudah dipelajari.
+Django adalah framework yang lengkap, menyediakan fitur Separation-of-Concerns, backend, dan SSR dengan integrasi Programming Language Python yang mudah digunakan.
 
 ---
 
