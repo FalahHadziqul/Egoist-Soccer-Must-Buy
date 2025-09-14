@@ -1,4 +1,4 @@
-# Egoist Must Buy PBP
+# TUGAS 2
 
 ## 1. Step-by-Step Implementasi Checklist Tugas 2
 
