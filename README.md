@@ -130,7 +130,8 @@ urlpatterns = [
     path('create_product/', create_product, name='create_product'),
     path('product/<str:id>/', show_product, name='show_product'),
     ...
-]```
+]
+```
 
 Lalu dalam settings.py agar Django mengetahui keberadaan base.html dan allow project PWS kita dalam konteks CSRF:
 ```python
