@@ -122,7 +122,7 @@ Perlu diperhatikan bahwa product_list disini adalah salah satu attribute yang di
 Kita akan membutuhkan 3 file HTML baru yaitu create_product.html , product_detail.html , dan base.html. 
 Perhatikan bahwa base.html disini adalah template html yang berada di root. Guna base.html disini adalah sebagai base configuration template lain (head meta charset, name, content). Nantinya template create_product.html dan product_detail.html akan dijadikan sebagai block content yang berada dalam base.html.
 
-### Konfigurasi URL
+### Konfigurasi URL dan Settings
 Dalam urls.py, kita tambahkan beberapa path baru dalam urlpatterns:
 ```python
 urlpatterns = [
@@ -131,6 +131,26 @@ urlpatterns = [
     path('product/<str:id>/', show_product, name='show_product'),
     ...
 ]```
+
+Lalu dalam settings.py agar Django mengetahui keberadaan base.html dan allow project PWS kita dalam konteks CSRF:
+```python
+...
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'], # Tambahkan konten baris ini
+        'APP_DIRS': True,
+        ...
+    }
+]
+...
+
+...
+CSRF_TRUSTED_ORIGINS = [
+    "https://muhammad-hadziqul-egoistmustbuy.pbp.cs.ui.ac.id"
+]
+...
+```
 
 ### Pembuatan Fungsi Render Products
 Dalam views.py kita tambahan dua fungsi baru:
